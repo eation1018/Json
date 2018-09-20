@@ -1,6 +1,6 @@
 {
 	"info": {
-		"name": "test1",
+		"name": "业务系统1",
 		"_postman_id": "5182191f-7d44-4427-b1ab-1394c5fbba98",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -13,8 +13,7 @@
 				"header": [
 					{
 						"key": "token",
-						"value": "4EBAFF5E4198B1FD",
-						"disabled": false
+						"value": "4EBAFF5E4198B1FD"
 					}
 				],
 				"body": {
@@ -22,17 +21,17 @@
 					"raw": "{\"account\": \"wangjinfeng@100707070707\",\r\"cacheStatus\": 1,\r\"commentStatus\": true,\r\"companyId\": 53,\r\"condition\": {\r\"channel\": [\"news\", \"media\", \"weixin\", \"weibo\", \"bbs\", \"tieba\", \"blog\", \"video\", \"app\", \"wenda\"],\r\"dataTypeVO\": [{\"channel\": \"weibo\", \"dataType\": [\"original\", \"transfer\"]},{\"channel\": \"tieba\", \"dataType\": [\"original\", \"transfer\"]}],\r\"emotion\": [\"common\", \"negative\"],\r\"foreignChannel\": [\"foreign_news\", \"foreign_media\"],\r\"relatedWords\": [\"high\", \"medium\", \"low\"]\r},\r\"download\": false,\r\"foreignChannelStatus\": 1,\r\"nodeId\": 1517023058800,\r\"page\": {\"start\": 0, \"limit\": 200},\r\"searchScope\": {\"name\": \"标题 \", \"type\": \"title\", \"text\": \"\"},\r\"sign\": \"c50b139e6a98f7555a1afdae57ea9ae3\",\r\"time\": \"1527647565\",\r\"timeRange\": {\"startTime\": 1527388252082, \"endTime\": 1527647452082},\r\"token\": \"4EBAFF5E4198B1FD\",\r\"username\": \"wang_jinfeng\",\r\"wechat\": \"\",\r\"wechatId\": \"\"}"
 				},
 				"url": {
-					"raw": "https://rest.mediaforce.cn/analysis/trend/lineAll",
-					"protocol": "https",
+					"raw": "http://k007-dev.baifendian.com/api/SystemManager/",
+					"protocol": "http",
 					"host": [
-						"rest",
-						"mediaforce",
-						"cn"
+						"k007-dev",
+						"baifendian",
+						"com"
 					],
 					"path": [
-						"analysis",
-						"trend",
-						"lineAll"
+						"api",
+						"SystemManager",
+						""
 					]
 				},
 				"description": ""
@@ -553,6 +552,38 @@
 						"analysis",
 						"trend",
 						"lineAll"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://rest.mediaforce.cn/analysis/trend/lineAll",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "4EBAFF5E4198B1FD"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"account\": \"wangjinfeng@100707070707\",\r\"cacheStatus\": 1,\r\"commentStatus\": true,\r\"companyId\": 53,\r\"condition\": {\r\"channel\": [\"news\", \"media\", \"weixin\", \"weibo\", \"bbs\", \"tieba\", \"blog\", \"video\", \"app\", \"wenda\"],\r\"dataTypeVO\": [{\"channel\": \"weibo\", \"dataType\": [\"original\", \"transfer\"]},{\"channel\": \"tieba\", \"dataType\": [\"original\", \"transfer\"]}],\r\"emotion\": [\"common\", \"negative\"],\r\"foreignChannel\": [\"foreign_news\", \"foreign_media\"],\r\"relatedWords\": [\"high\", \"medium\", \"low\"]\r},\r\"download\": false,\r\"foreignChannelStatus\": 1,\r\"nodeId\": 1517023058800,\r\"page\": {\"start\": 0, \"limit\": 200},\r\"searchScope\": {\"name\": \"标题 \", \"type\": \"title\", \"text\": \"\"},\r\"sign\": \"c50b139e6a98f7555a1afdae57ea9ae3\",\r\"time\": \"1527647565\",\r\"timeRange\": {\"startTime\": 1527388252082, \"endTime\": 1527647452082},\r\"token\": \"4EBAFF5E4198B1FD\",\r\"username\": \"wang_jinfeng\",\r\"wechat\": \"\",\r\"wechatId\": \"\"}"
+				},
+				"url": {
+					"raw": "http://k007-dev.baifendian.com/api/SystemManager/",
+					"protocol": "http",
+					"host": [
+						"k007-dev",
+						"baifendian",
+						"com"
+					],
+					"path": [
+						"api",
+						"SystemManager",
+						""
 					]
 				},
 				"description": ""
